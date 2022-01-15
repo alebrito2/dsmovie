@@ -1,6 +1,4 @@
-import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { BASE_URL } from 'utils/requests';
 import './styles.css';
 
 function Form() {
@@ -12,10 +10,6 @@ function Form() {
         count: 2,
         score: 4.5
     };
-
-    axios.get(`${BASE_URL}/movies?size=12&page=0`).then(response => {
-        console.log(response.data);
-    });
 
     return (
         <div className="dsmovie-form-container">
