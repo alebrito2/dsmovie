@@ -8,7 +8,7 @@ type Props = {
 }
 
 function MovieCard({movie}:Props) {
-    
+
     return (
         <div>
             <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />

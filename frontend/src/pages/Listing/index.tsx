@@ -28,28 +28,21 @@ function Listing() {
         });
     }, [pageNumber]);
 
-    
-    
+
+
     return (
         <>
-
-            <p>{pageNumber}</p>
             <Pagination />
 
             <div className="container">
                 <div className="row">
                     {page.content.map(movie => (
-                        <div key={movie.id} className="col-sm-6 col-md-4 col-lg-3 mb-3">
-                        <MovieCard movie = {movie} />
-                    </div>
-                    )
-                    )}
-                    
-                    
-                    
+                        <div key={movie.id} className="col-sm-4 col-lg-4 col-x1-3 mb-3">
+                            <MovieCard movie={movie} />
+                        </div>
+                    ))}
                 </div>
             </div>
-
         </>
 
     );
